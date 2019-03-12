@@ -1,0 +1,6 @@
+/* Use A4 paper */
+@page {
+    size: A4 portrait;
+    margin: 20mm !important;
+    margin-inside: 30mm !important;
+}

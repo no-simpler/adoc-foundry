@@ -1,0 +1,27 @@
+= Adoc Foundry: Vagrant box and shell script for all things Asciidoc/Asciidoctor
+:ast: *
+
+This setup aims to create a truly cross-platform hassle-free way to transform Asciidoc/Asciidoctor files of any complexity to quality HTML/PDF.
+
+Under the hood it pulls a Vagrant box with Fedora Linux, installs Asciidoctor (and its many sibling projects), Phantomjs, and Prince, along with all the necessary dependencies.
+
+It works as such:
+
+[source,bash]
+----
+$ vagrant up
+
+…
+
+$ vagrant ssh
+
+…
+
+[vagrant@localhost vagrant]$ ./af.sh
+----
+
+… and all `{ast}.adoc` files in `/src` directory become `{ast}.html` files in `/out` directory.
+
+Want a PDF? Use `-p` option. This will activate `asciidoctor-pdf`.
+
+Want a PDF with CSS styling and complex LaTeX math? Use `-P` option. This will activate `phantomjs` and `prince` post-processing.

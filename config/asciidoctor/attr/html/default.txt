@@ -1,0 +1,25 @@
+# This file allows asciidoctor attributes in the same format as in .adoc files.
+# Attributes provided here are passed to asciidoctor executable as command-line
+# options. These can be further overriden by passing ‘-a ATTR[=VALUE]’ options
+# to the included scripts.
+
+# Supported line comments:
+#   - hash mark;
+//  - two slashes.
+
+:doctype: article
+
+:stylesheet:
+:stylesdir: styles
+:imagesdir: images
+:iconsdir: icons
+:toc: left
+:toclevels: 3
+:sectnums:
+:sectnumlevels: 3
+:table-caption!:
+:prewrap!:
+:sectlinks:
+:sectanchors:
+:source-highlighter: prettify
+:source-linenums-option!:

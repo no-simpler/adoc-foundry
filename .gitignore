@@ -1,0 +1,79 @@
+# Ignore everything
+/*
+
+# Except git configuration files
+# !.gitattributes
+!/.gitignore
+
+# Except README
+!/README.adoc
+!/LICENSE
+
+# Except Vagrant’s files
+!/Vagrantfile
+!/vagrant-config/
+/vagrant-config/*
+!/vagrant-config/provision.sh
+
+# Except fonts directory without content
+# Any custom fonts should be provided by the user
+!/vagrant-config/fonts/
+/vagrant-config/fonts/*
+!/vagrant-config/fonts/.gitkeep
+
+# Except principal scripts
+!/af.sh
+
+# Except very specific content in config directory
+!/config/
+/config/*
+!/config/asciidoctor/
+!/config/mathjax/
+!/config/phantomjs/
+!/config/prince/
+/config/asciidoctor/*
+/config/mathjax/*
+/config/phantomjs/*
+/config/prince/*
+!/config/asciidoctor/attr/
+!/config/asciidoctor/style/
+/config/asciidoctor/attr/*
+/config/asciidoctor/style/*
+!/config/asciidoctor/attr/html/
+!/config/asciidoctor/attr/pdf/
+!/config/asciidoctor/attr/prince/
+!/config/asciidoctor/style/html/
+!/config/asciidoctor/style/pdf/
+!/config/asciidoctor/style/prince/
+/config/asciidoctor/attr/html/*
+/config/asciidoctor/attr/pdf/*
+/config/asciidoctor/attr/prince/*
+/config/asciidoctor/style/html/*
+/config/asciidoctor/style/pdf/*
+/config/asciidoctor/style/prince/*
+!/config/**/.gitkeep
+!/config/mathjax/with-html.js
+!/config/mathjax/with-svg.js
+!/config/phantomjs/render-math.js
+!/config/prince/default.css
+!/config/asciidoctor/attr/html/default.txt
+!/config/asciidoctor/attr/pdf/default.txt
+!/config/asciidoctor/attr/prince/default.txt
+!/config/asciidoctor/style/html/default.css
+!/config/asciidoctor/style/pdf/default.yml
+!/config/asciidoctor/style/prince/default.css
+
+# Except source directory without content
+!/src/
+/src/*
+!/src/.gitkeep
+
+# Except output directory without content
+!/out/
+/out/*
+!/out/.gitkeep
+
+# Except temporary directory without content
+!/tmp/
+/tmp/*
+!/tmp/.gitkeep
