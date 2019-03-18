@@ -23,7 +23,7 @@ MathJax.Hub.Config({
   tex2jax: {
     ignoreClass: "tex2jax_ignore",
     processClass: "math",
-    inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+    inlineMath: [ ["$","$"], ["\\(","\\)"], ["\\$","\\$"] ],
     displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
     processEscapes: false,
     preview: "none"
